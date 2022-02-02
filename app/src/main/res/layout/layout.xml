@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
+        android:elevation="8dp"
+        android:layout_rowWeight="4"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relat"
+            android:background="#06EF0F"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/img1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nametext"
+                android:text="This is Demo Name"
+                android:textStyle="bold"
+                android:layout_marginRight="30sp"
+                android:textSize="25sp"
+                android:layout_marginLeft="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/img1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/coursetext"
+                android:text="This is course name"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_marginRight="30sp"
+                android:textStyle="bold"
+                android:background="@drawable/list"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/img1"
+                android:layout_below="@id/nametext"
+                android:layout_marginLeft="30sp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
